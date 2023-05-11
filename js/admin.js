@@ -1,6 +1,7 @@
 import datos from "../data/data.json" assert { type: "json" };
 import { Pelicula } from "../js/clases.js";
 
+
 // const botonFav = document.getElementById("botonFav")
 
 const cuerpoTabla = document.querySelector("#cuerpo-tabla");
@@ -37,7 +38,6 @@ const giftUpdate = (e) => {
   datos[index].categoria = document.querySelector("#tipoModal").value;
   datos[index].descripcion = document.querySelector("#tiempoModal").value;
   datos[index].publicada = document.querySelector("#precioModal").value;
-  // datos[index].imagen = document.querySelector("#imagenModal").value;
 
   // Para refrescar la tabla con los datos ya modificados:
   cargarTabla();
@@ -53,13 +53,18 @@ const cargarTabla = () => {
   datos.map((item) => {
 
     const fila = document.createElement("tr");
-
-    const celdas = `<th>${item.codigo}</th>
-        <td>${item.nombre}</td>
-        <td>${item.categoria}</td>
-        <td>${item.descripcion}</td>
-        <td>${item.publicada}</td>
+    fila.style.maxHeight = "50px";
+    fila.style.overflowY = "auto";
+    const celdas = 
+        `
+        <th class="text-white">${item.codigo}</th>
+        <td class="text-white">${item.nombre}</td>
+        <td class="text-white">${item.categoria}</td>
+        <td class="text-white">${item.descripcion}</td>
+        <td class="text-white">${item.publicada}</td>
         <td>
+    
+        
         <div class="d-flex gap-2">
         <button class="btn btn-outline-warning" onclick="cambiarColor(this)"><i class="fa fa-star-o" aria-hidden="true"></i></button>
         <button class="btn btn-outline-primary" onclick="mostrarModal(${item.codigo})"><i class="fa fa-pencil" aria-hidden="true"></i></button>
@@ -73,7 +78,7 @@ const cargarTabla = () => {
   });
 };
 
-/*AGREGAR PELICULA*/
+/*AGREGAR DATOS A TABLA*/
 const agregarGift = (event) => {
   event.preventDefault();
 
@@ -84,6 +89,7 @@ const agregarGift = (event) => {
   let publicada = document.querySelector("#publicada").value;
 
   datos.push(new Pelicula(codigo, nombre, categoria, descripcion, publicada));
+  localStorage.setItem("pelicula", JSON.stringify(datos))
   document.querySelector("#formGift").reset();
   cargarTabla();
 };
@@ -127,8 +133,5 @@ cargarTabla();
 
 document.querySelector("#formGift").addEventListener("submit", agregarGift);
 document.querySelector("#formModal").addEventListener("submit", giftUpdate);
-
-// borrar esto desp
-localStorage.setItem("peliculasLS", JSON.stringify(datos));
 
 
