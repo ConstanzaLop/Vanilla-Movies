@@ -16,7 +16,7 @@
     <!--Inicio del Navbar-->
 
 
-    <section class="row">
+    <section class="row mb-4">
       <header class="col-12">
         <nav style="background-color: #ffc105;" class="navbar navbar-expand-lg fixed-top">
           <div class="container">
@@ -70,7 +70,8 @@
                   type="button"
                   class="btn btn-dark me-1 mb-1 mt-1"
                   data-bs-toggle="modal"
-                  data-bs-target="#ModalForm"
+                  
+                 data-bs-target="#loginModal"
                 >
                   Ingresar
                 </button>
@@ -118,7 +119,7 @@
       <section2>
         <a href="./Error 404.html" class="text-decoration-none">
           <div class="container-fluid">
-            <h2 class="text-bg-warning">CATEGORIAS</h2>
+            <h2 class="text-bg-warning text-center">CATEGORIAS</h2>
             <div id="carouselExampleInterval" class="carousel slide my-4" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2000">
@@ -259,6 +260,67 @@
           </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              
+              <div class="modal-body">
+
+                  <!-- Formulario de login -->
+                  <form id="loginForm">
+                      <div class="mb-3">
+                          <label for="username" class="form-label">Nombre de usuario o email</label>
+                          <input type="text" class="form-control border border-dark-subtle" id="username" name="username" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="password" class="form-label">Contraseña</label>
+                          <input type="password" class="form-control border border-dark-subtle" id="password" name="password" required>
+                      </div>
+                      <div class="mb-3 text-end">
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#passwordModal">¿Olvidaste tu
+                              contraseña?</a>
+                      </div>
+                      <div class="modal-footer">                            
+                          <button type="submit" class="btn btn-primary">Ingresar</button>                            
+                      </div>
+                  </form>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal de recuperar contraseña -->
+  <div class="modal fade" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="passwordModalLabel">Recuperar contraseña</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+                  <!-- Pasos para recuperar contraseña -->
+                  <p>Para recuperar tu contraseña:</p>
+                  <ol>
+                      <li>Enviaremos un link a la dirección de correo electrónico que tienes registrada en nuestra página.</li>
+                      <li>Ingresa a tu correo, haz clic en dicho link, y sigue los pasos para restablecer tu contraseña.</li>
+                      <!-- <li></li> -->
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  <script src="../js/login.js"></script>
 
     <!--Fin del Footer-->
     
