@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Vanilla Movies</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/inicio.css">
   </head>
-  <body>
+  <body class="bg-black">
     <!--Inicio del Navbar-->
 
 
@@ -20,10 +21,10 @@
         <nav style="background-color: #ffc105;" class="navbar navbar-expand-lg fixed-top">
           <div class="container">
             <a class="navbar-brand" href="#"
-              >RoolingMovies
+              >VanillaMovies
               <img
                 class="me-2"
-                src="./Assets/png-clipart-logo-clapperboard-product-design-marketing-movie-tape-text-service.png"
+                src="./img/logo.png"
                 alt="clapper-board"
                 width="40"
                 height="40"
@@ -48,16 +49,20 @@
                   placeholder="Buscar pelicula o serie"
                   aria-label="Search"
                 />
-                <a href="./error404.html">
-                <button
-                  style="color:#814141"
-                  class="btn btn-outline-dark"
-                  type="submit"
-                >
-                  Buscar
-                </button>
-              </a>
+               
+             
+             
               </form>
+              <a href="./Error 404.html">
+                <button
+                style="color:#814141"
+                class="btn btn-outline-dark"
+                type="submit"
+              >
+                Buscar
+              </button>
+                
+              </a>
             </div>
             <div>
               <form class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -75,7 +80,7 @@
               <form>
                 <a class="collapse navbar-collapse btn btn-secondary me-1 mb-1 mt-1" 
                 id="navbarSupportedContent" 
-                href="/registro.html" 
+                href="./html/registro.html" 
                 role="button">
                 Suscribirse</a>
               </form>
@@ -85,6 +90,131 @@
       </header>
     </section>
         <!--Fin del Navbar-->
+        <br><br><br>
+
+        <section1 class="margenTop">
+          <div class="container-fluid">
+            <div class="card mb-3 bg-black" style="max-width: 100%; max-height: max-content;">
+              <div class="row g-0">
+                <div class="col-md-7">
+                  <img src="img/jww.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-5 text-center">
+                  <div class="card-body my-3">
+                    <h2 class="card-title mt-5 text-warning">PELICULA DESTACADA</h2>
+                    <p class="card-text text-white">John Wick descubre un camino para derrotar a la Alta Mesa. Pero para poder ganar su libertad, Wick deberá enfrentarse a un nuevo rival con poderosas alianzas en todo el mundo, capaz de convertir a viejos amigos en enemigos.</p>
+                    <p class="card-text"><small class="text-warning">Tiempo 2h 49m / Año 2023</small></p>
+                    <a href="./Imagen destacada.html">
+                      <button class="button1 my-4">VER AHORA</button>
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section1>
+        <br><br>
+      <section2>
+        <a href="./Error 404.html" class="text-decoration-none">
+          <div class="container-fluid">
+            <h2 class="text-bg-warning">CATEGORIAS</h2>
+            <div id="carouselExampleInterval" class="carousel slide my-4" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img src="img/accion.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="img/infantil.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="img/cs-ficcion.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="img/comedia.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="img/terror.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="img/series.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="img/drama.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div> 
+        </a>
+      </section2>
+      
+      <section3>
+            <div class="container">
+              <div class="row my-2">
+                <h2 class="text-bg-warning">MAS VISTOS</h2>
+                <div class="col-12">
+                  <div class="row justify-content-center ">
+                    <div class="col-9 col-sm-5 col-md-5 col-lg-3 my-2">
+                      <a href="./Error 404.html">
+                <img src="./img/guardianesgalaxia.jpg" width="100%" height="100%" alt="peli-sugerida">
+                      </a>
+                    </div>
+                    <div class="col-9 col-sm-5 col-md-5 col-lg-3 my-2">
+                      <a href="./Error 404.html">
+                        <img src="./img/mariobros.jpg" width="100%" height="100%" alt="peli-sugerida">
+                      </a>
+                    </div>
+                    <div class="col-9 col-sm-5 col-md-5 col-lg-3 my-2">
+                      <a href="./Error 404.html">
+                        <img src="./img/cruella.jpg" width="100%" height="100%" alt="peli-sugerida">
+                      </a>
+                    </div>
+                    <div class="col-9 col-sm-5 col-md-5 col-lg-3 my-2">
+                      <a href="./Error 404.html">
+                        <img src="./img/alerta-roja.jpg" width="100%" height="100%" alt="peli-sugerida">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section3>
+      
+      <section4 class="py-3">
+            <div
+              class="container d-flex justify-content-center bg-warning container-background rounded card-shadow border border-info">
+              <div class="col-md-10 col-lg-10">
+                <div class="row flex-md-row align-items-center  ">
+                  <div class="col-md-7   py-2">
+                    <h2 class="text-black text-center font-h2-shadow mb-0 px-2 fw-bold">SUSCRIBETE A VANILLA MOVIES</h2>
+                    <div class="col-md-12 mx-auto text-center text-black mb-md-3 fw-bold my-4">
+                      <p class="mb-2 pb-md-0"><i class="uil uil-check icon"></i> Recomendaciones exclusivas para ti.</p>
+                      <p class="mb-2 pb-md-0"><i class="uil uil-check icon"></i> Ve todo lo que quieras. Sin anuncios.</p>
+                      <p class="mb-2 pb-md-0"><i class="uil uil-check icon"></i> Puedes cambiar de plan o cancelar cuando
+                        quieras.</p>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col-12 col-md-12 d-grid">
+                        <a href="./Error 404.html" class="shadow__btn text-center text-decoration-none">VER PLANES</a>
+                      </div>
+      
+                    </div>
+                  </div>
+                  <div class="col-md-5 py-2 px-5 px-md-1 px-lg-5 justify-content-end">
+                    <img class="img-fluid" src="img/logo.png" alt="banner">
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section4>
     
     <!--Inicio del Footer-->
 
@@ -96,7 +226,7 @@
             </div>
           <div class="col-12 text-center">
             <ul>
-              <a class="navbar-brand" href="/error404.html">
+              <a class="navbar-brand" href="./Error 404.html">
                 <img
                   class="me-2"
                   src="/Assets/facebook.svg"
@@ -104,7 +234,7 @@
                   width="40"
                   height="40"
               /></a>
-              <a class="navbar-brand" href="/error404.html">
+              <a class="navbar-brand" href="./Error 404.html">
                 <img
                   class="me-2"
                   src="/Assets/twitter.svg"
@@ -112,7 +242,7 @@
                   width="40"
                   height="40"
               /></a>
-              <a class="navbar-brand" href="/error404.html">
+              <a class="navbar-brand" href="./Error 404.html">
                 <img
                   class="me-2"
                   src="/Assets/whatsapp-alt.svg"
