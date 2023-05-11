@@ -1,0 +1,30 @@
+[
+  {
+    "codigo": 1,
+    "nombre": "John Wick 4",
+    "categoria": "Acción",
+    "descripcion": "El marqués Vincent de Gramont pretende matar a John Wick para afianzar su poder en la Orden Suprema. Sin embargo, John tratará de adelantarse a cada uno de sus movimientos hasta lograr enfrentarse cara a cara con su peor enemigo.",
+    "publicada": "sí"
+  },
+  {
+    "codigo": 2,
+    "nombre": "Shazam!",
+    "categoria": "Ciencia Ficción",
+    "descripcion": "El joven de 14 años Billy Batson puede convertirse en un superhéroe adulto solo con gritar la palabra ´¡Shazam!´. Pero dentro de un cuerpo superpoderoso, Shazam esconde un corazón de niño. A pesar de las inconsciencias propias de su edad, Shazam deberá aprender a controlar sus habilidades para poder enfrentarse a las letales fuerzas del mal que controla el Dr. Thaddeus Sivana.",
+    "publicada": "sí"
+  },
+  {
+    "codigo": 3,
+    "nombre": "Al borde de la extinción",
+    "categoria": "Drama",
+    "descripcion": "Tras sufrir un accidente y caer a un planeta desconocido, los supervivientes de la nave descubren que han llegado a la Tierra, pero hace 65 millones de años. Ahora, deben cruzar un territorio inhóspito, poblado de bestias prehistóricas, para salir.",
+    "publicada": "no"
+  },
+  {
+    "codigo": 4,
+    "nombre": "Avatar 2: El camino del agua ",
+    "categoria": "Ciencia Ficción",
+    "descripcion": "Jake Sully y Ney'tiri han formado una familia y hacen todo lo posible por permanecer juntos. Sin embargo, deben abandonar su hogar y explorar las regiones de Pandora cuando una antigua amenaza reaparece.",
+    "publicada": "si"
+  }
+]
