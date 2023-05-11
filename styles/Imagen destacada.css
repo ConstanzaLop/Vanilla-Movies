@@ -1,0 +1,37 @@
+body {
+    background-image: url('../assets/FONDOIMADES.jpg');
+    background-size: cover;
+  }
+  
+  .Titulo{
+    color: #FFC105;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .descripcion {
+    background-color: #454545;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .button-reproducir {
+    background-color: #17A4BA;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .button-reproducir:hover {
+    background-color: #F7E6D4;
+    color: #454545;
+    cursor: pointer;
+  }
+
+
+
+        
+  
