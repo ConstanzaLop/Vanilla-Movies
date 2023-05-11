@@ -73,7 +73,7 @@ const cargarTabla = () => {
   });
 };
 
-/*AGREGAR DATOS A TABLA*/
+/*AGREGAR PELICULA*/
 const agregarGift = (event) => {
   event.preventDefault();
 
@@ -128,6 +128,7 @@ cargarTabla();
 document.querySelector("#formGift").addEventListener("submit", agregarGift);
 document.querySelector("#formModal").addEventListener("submit", giftUpdate);
 
-
+// borrar esto desp
+localStorage.setItem("peliculasLS", JSON.stringify(datos));
 
 

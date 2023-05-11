@@ -1,10 +1,10 @@
-
 //1- VARIABLES GLOBALES
 const loginForm = document.getElementById('loginForm');
+
 const userNameInput = document.getElementById("username")
 const passInput = document.getElementById("password")
 
-let usuarios = []
+const usuariosRegistrados = JSON.parse(localStorage.getItem('usuariosRegistrados-LS')) || [];
 
 
 // function handleSubmit() {
@@ -25,22 +25,48 @@ let usuarios = []
 
 // }
 
+// function handleSubmit(e) {
+    
+//         if (userNameInput.value == "admin" && passInput.value == "admin") {
+//             e.preventDefault()
+//             // alert("Puedes entrar")
+//             window.location.href = "../html/admin.html"
+    
+//         }
+//         else if (usuariosRegistrados[i].user === userNameInput.value) {
+//             e.preventDefault()
+//             window.location.href = "../index.html"
+//         }
+
+
+
+//         else {
+//         alert("el usuario ó la contraseña ingresados no coinciden")
+//     }
+// }
+
+// openAI:
+
 function handleSubmit(e) {
-    if (userNameInput.value == "admin" && passInput.value == "admin") {
-        e.preventDefault()
-        // alert("Puedes entrar")
-        window.location.href = "../html/admin.html"
-
-    } else if (userNameInput.value == "juanperez@hotmail.com" && passInput.value == "juan123"){
-        // alert("Puedes entrar")
-        e.preventDefault()
-        window.location.href = "../index.html"
-    } else {
-        alert("el usuario ó la contraseña ingresados no coinciden")
+    for (let i = 0; i < usuariosRegistrados.length; i++) {
+      if (userNameInput.value === "admin" && passInput.value === "admin") {
+        e.preventDefault();
+        window.location.href = "../html/admin.html";
+        return;
+      } else if (usuariosRegistrados[i].user === userNameInput.value) {
+        if (usuariosRegistrados[i].pass === passInput.value) {
+          e.preventDefault();
+          window.location.href = "../index.html";
+          return;
+        }
+      }
     }
-}
+    alert("El usuario o la contraseña ingresados no coinciden");
+    e.preventDefault();
+    window.location.href = "../html/registro.html";
+  }
+  
 
- 
 
 
 loginForm.addEventListener('submit', handleSubmit)
